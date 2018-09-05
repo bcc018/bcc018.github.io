@@ -59,7 +59,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     
-    <div class="container-fluid" style="margin-top: 10px; text-align: center;" >
+    <div class="container-fluid" style="margin-top: 10px;">
         <div class = "yellowbox"> <h2>Ficha de Matérias BCC-018</h2></div> 
         <div class="column">
             <div class="prof col-lg">
@@ -578,38 +578,48 @@
         	-->
 
         	<div class = "prof col-lg ">
-        	    <div style="display: flex; flex-direction: column; text-align: center;">
+        	    <div style="display: flex; flex-direction: column;">
 		        <button class="btn btn-info btn-collapsed" type="button"
                             data-toggle="collapse" data-target="#links">
                         Links Úteis
-                        </button>        		
-                        <div id = "links" class="prof-data collapse">
-                            
-                            <div class = "yellowbox">
-				<a href="https://drive.google.com/open?id=1-Edxrw-_wahUobJGMTd41qJSAVzHivREWApYVkPZm64" target="_blank">Calendário Escolar</a><br>
-			    </div>
-
-			    
-			    <div class = "yellowbox">
-                            <a href="https://calendar.google.com/calendar/b/1?cid=dXNwLmJyX21hdnBscTJjZDAydjV2NmNhcmR2cWNncW4wQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank">Calendário de Provas - Adicione à sua agenda Google (Só no PC)</a>
-                    	    </div>
-                        
-                        </div>	
+                </button>        		
+                <div id = "links" class="prof-data collapse">
+                    <div class = "yellowbox">
+    	                <a href="https://drive.google.com/open?id=1-Edxrw-_wahUobJGMTd41qJSAVzHivREWApYVkPZm64" target="_blank">Calendário Escolar</a><br>
                     </div>
+                </div>
         	</div>
+
+            <div class = "prof col-lg ">
+                
+                <div style="display: flex; flex-direction: column;">
+                    <button class="btn btn-info btn-collapsed" type="button"
+                                data-toggle="collapse" data-target="#calendar">
+                            Calendário de Provas
+                    </button>               
+                    <div id = "calendar" class="prof-data collapse">   
+                        <div class = "calendar" style="text-align: center">
+                             <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                                <title>BCC 018</title>
+                             </head>
+                            <body>
+                                <iframe src="https://calendar.google.com/calendar/embed?src=usp.br_mavplq2cd02v5v6cardvqcgqn0%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 500" width="800" height="600" frameborder="0" scrolling="no">
+                                </iframe>
+                            </body>
+                        </div>
+                   
+                            
+                    </div>  
+                </div>
+            </div>
+
+
+
         </div>
     </div>
 
-    <div class = "calendar" style="text-align: center;">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>BCC 018</title>
-        </head>
-        <body>
-            <iframe src="https://calendar.google.com/calendar/embed?src=usp.br_mavplq2cd02v5v6cardvqcgqn0%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="400" height="600" frameborder="0" scrolling="no"></iframe>
-        </body>
-    </div>
 </body>
 </html>
