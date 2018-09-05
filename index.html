@@ -49,6 +49,52 @@
 	       margin: .3em .0em;
             border-radius: .9em;
         }
+        
+        @media (max-width: 850px) {
+             .big-container {
+                 display: none;
+             }
+         }
+        @media (min-width: 850px) {
+             .small-container {
+                 display: none;
+             }
+        }
+        
+        /* Responsive iFrame */
+         .responsive-iframe-container-calendar {
+             position: relative;
+             padding-bottom: 56.25%;
+             padding-top: 30px;
+             height: 0;
+             overflow: hidden;
+         }
+         .responsive-iframe-container-calendar iframe,   
+         .vresponsive-iframe-container-calendar object,  
+         .vresponsive-iframe-container-calendar embed {
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+         }
+
+          .responsive-iframe-container-list {
+             position: relative;
+             padding-bottom: 56.25%;
+             padding-top: 30px;
+             height: 0;
+             overflow: hidden;
+         }
+         .responsive-iframe-container-list iframe,   
+         .vresponsive-iframe-container-list object,  
+         .vresponsive-iframe-container-list embed {
+             position: absolute;
+             top: 1%;
+             left: 15%;
+             width: 70%;
+             height: 100%;
+         }
 
 
     </style>
@@ -497,13 +543,13 @@
 			    <p>Mon. Turci <br>
 				    SEG 19h->21h, 5-103<br>
 				    QUIN das 21h->23h, 5-103</p>
-			</div>
+			            </div>
                         
-			<div class="card email">			       
+			             <div class="card email">			       
                             <h3>CONTATO</h3>
                             Professora: onnis@icmc.usp.br<br>
-			    Monitor Turci: lucas.turci@usp.br<br>
-			    Ramal - 73-9722	
+            			    Monitor Turci: lucas.turci@usp.br<br>
+            			    Ramal - 73-9722	
                         </div>
                         <div class="card ementa">
 			    Livro Recomendado - Sallas<br>
@@ -515,8 +561,8 @@
                         </div>
                         <div class="card listas">
                             <h3>LISTAS</h3>
-			<a href="http://conteudo.icmc.usp.br/pessoas/onnis/SMA354T2_arquivos/lista1.pdf" target="_blank">1° Lista</a>
-			<a href="http://conteudo.icmc.usp.br/pessoas/onnis/SMA354T1_arquivos/lista2.pdf" target="_blank">2° Lista</a>	      	
+                    			<a href="http://conteudo.icmc.usp.br/pessoas/onnis/SMA354T2_arquivos/lista1.pdf" target="_blank">1° Lista</a>
+                    			<a href="http://conteudo.icmc.usp.br/pessoas/onnis/SMA354T1_arquivos/lista2.pdf" target="_blank">2° Lista</a>	      	
                         </div>
                         <div class="card arquivos">
                             <h3>ARQUIVOS</h3>
@@ -588,38 +634,30 @@
         	                <a href="https://drive.google.com/open?id=1-Edxrw-_wahUobJGMTd41qJSAVzHivREWApYVkPZm64" target="_blank">Calendário Escolar</a><br>
                         </div>
                     </div>
-        	</div>
+        	   </div>
+            </div>
 
             <div class = "prof col-lg ">
-                
                 <div style="display: flex; flex-direction: column;">
                     <button class="btn btn-info btn-collapsed" type="button"
-                                data-toggle="collapse" data-target="#calendar">
+                                data-toggle="collapse" data-target="#calendar" >
                             Calendário de Provas
                     </button>               
-                    <div id = "calendar" class="prof-data collapse">   
-                        <div class = "calendar" style="text-align: center">
-                             <head>
-                                <meta charset="UTF-8">
-                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                                <title>BCC 018</title>
-                             </head>
-                            <body>
-                                <iframe src="https://calendar.google.com/calendar/embed?src=usp.br_mavplq2cd02v5v6cardvqcgqn0%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 500" width="800" height="600" frameborder="0" scrolling="no">
-                                </iframe>
-                            </body>
-                        </div>
-                   
-                            
+                     
+                     <div id="calendar" class="responsive-iframe-container-calendar big-container">
+                            <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;height=450&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=usp.br_mavplq2cd02v5v6cardvqcgqn0%40group.calendar.google.com&amp;color=%23711616&amp;ctz=America%2FSao_Paulo" style="border-width:0" width="700" height="450" frameborder="0" scrolling="no"></iframe>
+                    </div>  
+                    <div id="showCalendars" class="responsive-iframe-container-list small-container" >
+                            <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23339999&amp;src=usp.br_mavplq2cd02v5v6cardvqcgqn0%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FSao_Paulo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                     </div>  
                 </div>
             </div>
-
-
-
-        </div>
-    </div>
-
+        
 </body>
 </html>
+                            
+
+                
+
+
+
